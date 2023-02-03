@@ -17,11 +17,11 @@ function mergeHalves(leftHalf, rightHalf) {
 		const rightValue = rightHalf[iR];
 		if (leftValue < rightValue || rightValue === undefined) {
 			mergedArr.push(leftValue);
-			leftIndex++;
+			iL++;
 		} 
 		else if (rightValue < leftValue || leftValue === undefined) {
 			mergedArr.push(rightValue);
-			rightIndex++;
+			iR++;
 		}
 	}
 	return mergedArr;
